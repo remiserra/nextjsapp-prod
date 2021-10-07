@@ -3,7 +3,7 @@ kind: Service
 metadata:
   annotations:
     app.openshift.io/runtime: js
-    app.openshift.io/vcs-ref: c5860d2d0cedeab236a76f3162ce33eac758c99d
+    app.openshift.io/vcs-ref: fb9e28b0059521331345cb4b2134943bc464fa41
     app.openshift.io/vcs-uri: https://github.com/remiserra/nextjsapp
   labels:
     app: nextjsapp-rs
@@ -28,7 +28,7 @@ kind: Deployment
 metadata:
   annotations:
     app.openshift.io/runtime: js
-    app.openshift.io/vcs-ref: c5860d2d0cedeab236a76f3162ce33eac758c99d
+    app.openshift.io/vcs-ref: fb9e28b0059521331345cb4b2134943bc464fa41
     app.openshift.io/vcs-uri: https://github.com/remiserra/nextjsapp
   labels:
     app: nextjsapp-rs
@@ -48,7 +48,7 @@ spec:
     metadata:
       annotations:
         app.openshift.io/runtime: js
-        app.openshift.io/vcs-ref: c5860d2d0cedeab236a76f3162ce33eac758c99d
+        app.openshift.io/vcs-ref: fb9e28b0059521331345cb4b2134943bc464fa41
         app.openshift.io/vcs-uri: https://github.com/remiserra/nextjsapp
       labels:
         app: nextjsapp-rs
@@ -61,7 +61,7 @@ spec:
         - name: PROTOCOLS
         - name: LOG_LEVEL
           value: debug
-        image: quay.io/remiserra/nextjsapp-rs:c5860d2d0cedeab236a76f3162ce33eac758c99d
+        image: quay.io/remiserra/nextjsapp-rs:fb9e28b0059521331345cb4b2134943bc464fa41
         imagePullPolicy: IfNotPresent
         livenessProbe:
           failureThreshold: 3
@@ -100,7 +100,7 @@ kind: Route
 metadata:
   annotations:
     app.openshift.io/runtime: js
-    app.openshift.io/vcs-ref: c5860d2d0cedeab236a76f3162ce33eac758c99d
+    app.openshift.io/vcs-ref: fb9e28b0059521331345cb4b2134943bc464fa41
     app.openshift.io/vcs-uri: https://github.com/remiserra/nextjsapp
   labels:
     app: nextjsapp-rs
